@@ -12,28 +12,33 @@
             padding: 0;
             text-align: center;
         }
-        .navbar {
+        header, footer {
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
             display: flex;
             justify-content: left;
             background-color: #fff;
             padding: 10px 20px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .navbar a {
+        nav a {
             text-decoration: none;
             color: black;
             margin: 0 15px;
             font-size: 18px;
             cursor: pointer;
         }
-        .navbar a:hover {
+        nav a:hover {
             font-weight: bold;
         }
-        .navbar a.disabled {
+        nav a.disabled {
             color: gray;
             pointer-events: none;
         }
-        .content {
+        main {
             margin-top: 20px;
         }
         img {
@@ -50,16 +55,30 @@
     </script>
 </head>
 <body>
-    <div class="navbar">
-        <a onclick="showContent('C:/Users/arche/Downloads/51HCHvOLt5L._AC_SY580_.jpg', 'Bienvenido a nuestra tienda de joyería.')">Home</a>
-        <a onclick="showContent('C:/Users/arche/Downloads/71S1YuWVd-S._AC_UF350,350_QL80_.jpg', 'Contáctanos para más información.')">Contact Us</a>
-        <a onclick="showContent('C:/Users/arche/Downloads/189384477-grupo-multirracial-de-amigos-en-pila-de-trabajo-en-equipo-modelos-femeninos-uniendo-sus-manos-en-un.jpg', 'Conoce a nuestro equipo de expertos.')">Our Teams</a>
-        <a onclick="showContent('C:/Users/arche/Downloads/il_fullxfull.4268314130_gxoa.jpg', 'Explora nuestro catálogo de joyas.')">Menu</a>
+    <!-- Header -->
+    <header>
+        <h1>Bienvenido a nuestra Tienda de Joyería</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a onclick="showContent('https://raw.githubusercontent.com/ErickH0715/Final-Project/main/71S1YuWVd-S._AC_UF350%2C350_QL80_.jpg', 'Bienvenido a nuestra tienda de joyería.')">Home</a>
+        <a onclick="showContent('https://raw.githubusercontent.com/ErickH0715/Final-Project/main/71S1YuWVd-S._AC_UF350%2C350_QL80_.jpg', 'Contáctanos para más información.')">Contact Us</a>
+        <a onclick="showContent('https://raw.githubusercontent.com/ErickH0715/Final-Project/main/189384477-grupo-multirracial-de-amigos-en-pila-de-trabajo-en-equipo-modelos-femeninos-uniendo-sus-manos-en-un.jpg', 'Conoce a nuestro equipo de expertos.')">Our Teams</a>
+        <a onclick="showContent('https://raw.githubusercontent.com/ErickH0715/Final-Project/main/189384477-grupo-multirracial-de-amigos-en-pila-de-trabajo-en-equipo-modelos-femeninos-uniendo-sus-manos-en-un.jpg', 'Explora nuestro catálogo de joyas.')">Menu</a>
         <a class="disabled">Disabled</a>
-    </div>
-    <div class="content">
-        <img id="displayed-image" src="C:/Users/arche/Downloads/51HCHvOLt5L._AC_SY580_.jpg" alt="Imagen de joyería">
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <img id="displayed-image" src="https://raw.githubusercontent.com/ErickH0715/Final-Project/main/71S1YuWVd-S._AC_UF350%2C350_QL80_.jpg" alt="Imagen de joyería">
         <p id="image-description">Bienvenido a nuestra tienda de joyería.</p>
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jewelry Store. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
+
